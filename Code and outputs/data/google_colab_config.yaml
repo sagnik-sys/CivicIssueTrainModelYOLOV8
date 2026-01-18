@@ -1,0 +1,7 @@
+path : '/content/gdrive/My Drive/yolo v8/data'
+train: /images/train
+val: /images/test
+
+names:
+  0: Pothole
+  1: waterlog
