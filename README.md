@@ -1,4 +1,4 @@
-🚧 **REAL-TIME INFRASTRUCTURE DAMAGE DETECTION SYSTEM** 🚧
+🚧 **REAL-TIME INFRASTRUCTURE DAMAGE DETECTION SYSTEM (COMPUTER VISION AND MACHINE LEARNING)** 🚧
 
 ---
 
@@ -6,6 +6,8 @@
 The **Real-Time Infrastructure Damage Detection System** is a computer vision–based solution built using **YOLOv8** to automatically detect and classify infrastructure damages from **images and videos**.  
 The system identifies **potholes**, **waterlogging**, and **damaged electric poles**, and generates **annotated output images and videos** highlighting detected objects.  
 This project focuses on **real-world robustness** and **deployment-ready workflows**.
+
+<p align="center"> <img src="https://github.com/sagnik-sys/CivicIssueTrainModelYOLOV8/blob/main/Code%20and%20outputs/runs/detect/train5/val_batch2_labels.jpg?raw=true" width="600" height="300"> </p>
 
 ---
 
@@ -60,8 +62,7 @@ This project focuses on **real-world robustness** and **deployment-ready workflo
 ## 🔮 **FUTURE ENHANCEMENTS**
 - ✨ Improve accuracy with **larger and more diverse datasets**
 - ✨ Add **damage severity estimation**
-- ✨ Deploy as a **web or mobile application**
-- ✨ Integrate **location-based tagging**
+- ✨ Add **Other Features in the training dataset**
 
 ---
 
