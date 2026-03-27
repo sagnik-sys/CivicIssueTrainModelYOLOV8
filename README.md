@@ -1,7 +1,7 @@
 <div align="center">
 
 <!-- Banner -->
-<img src="https://github.com/sagnik-sys/CivicIssueTrainModelYOLOV8/raw/main/Training%20Code%20and%20Outputs/runs/detect/train5/val_batch2_labels.jpg" alt="Detection Sample" width="100%" style="border-radius: 12px;" />
+<img src="https://github.com/sagnik-sys/CivicIssueTrainModelYOLOV8/raw/main/Training%20Code%20and%20Outputs/runs/detect/train5/val_batch2_labels.jpg" alt="Detection Sample" width="100%" height="50%" style="border-radius: 12px;" />
 
 <br/><br/>
 
@@ -12,7 +12,7 @@
 [![YOLOv8](https://img.shields.io/badge/YOLOv8-Ultralytics-FF4F00?style=for-the-badge&logo=github&logoColor=white)](https://github.com/ultralytics/ultralytics)
 [![OpenCV](https://img.shields.io/badge/OpenCV-4.x-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white)](https://opencv.org)
 [![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-F37626?style=for-the-badge&logo=jupyter&logoColor=white)](https://jupyter.org)
-[![License: MIT](https://img.shields.io/badge/License-MIT-22c55e?style=for-the-badge)](LICENSE)
+
 
 > **Automatically detect potholes, waterlogging, and damaged electric poles in real-time — enabling smarter, faster civic infrastructure maintenance.**
 
@@ -32,7 +32,7 @@
 - [Project Structure](#-project-structure)
 - [Use Cases](#-use-cases)
 - [Future Enhancements](#-future-enhancements)
-- [License](#-license)
+
 
 ---
 
@@ -55,9 +55,9 @@ Cities generate vast amounts of visual data every day — dashcam footage, surve
 
 | Input | Annotated Output |
 |-------|-----------------|
-| Raw road/infrastructure image | YOLOv8 detects and labels all damage with bounding boxes |
+| Raw road/infrastructure image |  YOLOv8 detects and classifies them based on confidence |
+| Raw road/infrastructure video |  YOLOv8 detects and generates a video with bounding boxes for use by other systems |
 
-> *Annotated outputs are automatically saved to `Training Code and Outputs/runs/detect/`*
 
 </div>
 
@@ -88,7 +88,8 @@ Cities generate vast amounts of visual data every day — dashcam footage, surve
 │  Vision Library │  OpenCV                           │
 │  Deep Learning  │  PyTorch (via Ultralytics)        │
 │  Notebook       │  Jupyter Notebook                 │
-│  Output Format  │  Annotated MP4 / JPG / PNG        │
+│  Output Format  │  Annotated MP4 / JPG / PNG        |
+|                            OR Text                  |
 └─────────────────┴───────────────────────────────────┘
 ```
 
@@ -103,8 +104,9 @@ Input Image / Video Frame
          │
          ▼
   ┌─────────────┐
-  │  YOLOv8     │  ← Backbone + Neck (CSPDarknet + PANet)
-  │  Detector   │
+  │  YOLOv8     │  ← Custom Trained YoloV8 model on Civic Issues (Potholes, Waterlogs, broken electric poles)
+  │  model      |
+  |  (best.pt)  |           
   └──────┬──────┘
          │
          ▼
@@ -112,7 +114,7 @@ Input Image / Video Frame
          │
          ▼
   ┌─────────────────────┐
-  │  Annotated Output   │  ← Image / Video with drawn detections
+  │  Annotated Output   │  ← Image / Video with drawn detections OR text output
   └─────────────────────┘
 ```
 
@@ -201,6 +203,7 @@ CivicIssueTrainModelYOLOV8/
             └── train5/
                 ├── val_batch2_labels.jpg    # Validation batch with labels
                 ├── results.png              # Training metrics plot
+                ├── train.ipynb              #Training Code
                 └── ...                      # Other training artifacts
 ```
 
@@ -240,15 +243,10 @@ Contributions are welcome! If you'd like to improve the model, extend the datase
 
 ---
 
-## 📄 License
-
-This project is licensed under the **MIT License** — see the [LICENSE](LICENSE) file for details.
-
----
-
 <div align="center">
 
-Made with ❤️ for smarter, safer cities.
+Thank You!
+Contact information: sagnikbhattacharyya3@outlook.com
 
 ⭐ If you find this project useful, please consider giving it a star!
 
