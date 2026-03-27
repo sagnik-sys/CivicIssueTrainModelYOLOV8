@@ -9,6 +9,7 @@ This project focuses on **real-world robustness** and **deployment-ready workflo
 
 <p align="center"> <img src="https://github.com/sagnik-sys/CivicIssueTrainModelYOLOV8/blob/main/Code%20and%20outputs/runs/detect/train5/val_batch2_labels.jpg?raw=true" width="600" height="300"> </p>
 
+
 ---
 
 ## 🛠️ **TECHNOLOGIES USED**
@@ -47,7 +48,7 @@ This project focuses on **real-world robustness** and **deployment-ready workflo
 ## 🚀 **HOW TO RUN**
 1️⃣ Clone the repository  
 2️⃣ Install required dependencies  
-3️⃣ Run image and video detection scripts to generate annotated outputs  
+3️⃣ Run image and video detection scripts to generate annotated outputs (Test.ipynb) 
 
 ---
 
